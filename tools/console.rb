@@ -50,8 +50,4 @@ truck1.car_owner = owner1
 truck2.car_owner = owner3
 truck3.car_owner = owner2
 
-
-=begin
-=end
-
 binding.pry
