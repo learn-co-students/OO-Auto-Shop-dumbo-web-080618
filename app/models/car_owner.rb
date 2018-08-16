@@ -21,6 +21,7 @@ class CarOwner
     self.my_cars.map{|car| car.mechanic}.uniq
   end
   # - Get the average amount of cars owned for all owners
-
-
+  def self.avg_cars_owned
+    Car.all.size/self.all.size.to_f
+  end
 end
