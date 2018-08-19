@@ -15,7 +15,15 @@ def self.all
 end
 
 def cars
-  Car.all.select {|car| car.mechanic == self}
+  Car.all.select {|car| car.mechanic[0] == self}
+end
+
+def car_owners
+  self.cars.map {|car| car.car_owner}.uniq
+end
+
+def car_owner_names
+  self.cars.map {|car| car.car_owner.name}.uniq
 end
 
 
