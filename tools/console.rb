@@ -4,4 +4,4 @@ def reload
   load 'config/environment.rb'
 end
 
-binding.pry
+#
